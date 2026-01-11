@@ -1,238 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>AINSOFT Company</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AINSOFT | Official Website</title>
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
 
-        body {
-            background: #e9f9fb;
-            color: #222;
-            line-height: 1.6;
-        }
+    body {
+      background-color: #e9f9fb;
+      color: #222;
+      line-height: 1.6;
+    }
 
-        /* HEADER */
-        header {
-            background: linear-gradient(135deg, #2bb0d6, #1b87a6);
-            color: #fff;
-            padding: 40px 20px;
-            text-align: center;
-        }
+    header {
+      background: linear-gradient(135deg, #2bb0d6, #1b87a6);
+      color: #fff;
+      padding: 90px 20px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
 
-        header h1 {
-            font-size: 2.5rem;
-            letter-spacing: 2px;
-        }
+    header::after {
+      content: '';
+      position: absolute;
+      bottom: -60px;
+      left: -10%;
+      width: 120%;
+      height: 120px;
+      background: #eef7fb;
+      border-radius: 100% 100% 0 0;
+    }
 
-        header p {
-            margin-top: 10px;
-            font-size: 1rem;
-            opacity: 0.9;
-        }
+    header h1 {
+      font-size: 2.8rem;
+      letter-spacing: 2px;
+    }
 
-        /* MAIN CONTAINER */
-        .container {
-            max-width: 1100px;
-            margin: auto;
-            padding: 40px 20px;
-        }
+    header p {
+      margin-top: 10px;
+      opacity: 0.9;
+    }
 
-        /* SECTION TITLE */
-        .section-title {
-            text-align: center;
-            font-size: 1.8rem;
-            margin-bottom: 30px;
-            color: #1b87a6;
-        }
+    nav {
+      background-color: #146b84;
+      padding: 12px;
+      text-align: center;
+    }
 
-        /* MISSION & VISION */
-        .card-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-            margin-bottom: 50px;
-        }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+    }
 
-        .card {
-            background: #fff;
-            border-radius: 15px;
-            padding: 25px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
+    nav a:hover {
+      text-decoration: underline;
+    }
 
-        .card:hover {
-            transform: translateY(-5px);
-        }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 50px 20px;
+    }
 
-        .card h3 {
-            margin-bottom: 15px;
-            color: #1b87a6;
-        }
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 35px;
+      color: #1b87a6;
+    }
 
-        /* ABOUT */
-        .about {
-            background: #ffffff;
-            padding: 35px;
-            border-radius: 15px;
-            margin-bottom: 50px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-        }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin-bottom: 60px;
+    }
 
-        /* SERVICES */
-        .services {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-bottom: 60px;
-        }
+    .card {
+      background: #fff;
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
 
-        .service-box {
-            background: #1b87a6;
-            color: #fff;
-            padding: 25px;
-            border-radius: 15px;
-            text-align: center;
-            transition: background 0.3s;
-        }
+    .card h3 {
+      margin-bottom: 15px;
+      color: #1b87a6;
+    }
 
-        .service-box:hover {
-            background: #146b84;
-        }
+    .about {
+      background: #fff;
+      padding: 35px;
+      border-radius: 15px;
+      margin-bottom: 60px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    }
 
-        .service-box h4 {
-            margin-bottom: 10px;
-        }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-bottom: 70px;
+    }
 
-        /* FOOTER */
-        footer {
-            background: linear-gradient(135deg, #1b87a6, #2bb0d6);
-            color: #fff;
-            padding: 40px 20px 20px;
-        }
+    .service-box {
+      background: #1b87a6;
+      color: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      text-align: center;
+    }
 
-        .footer-content {
-            max-width: 1100px;
-            margin: auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-        }
+    footer {
+      background: linear-gradient(135deg, #1b87a6, #2bb0d6);
+      color: #fff;
+      padding: 45px 20px 20px;
+    }
 
-        footer h3 {
-            margin-bottom: 15px;
-        }
+    .footer-content {
+      max-width: 1100px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
 
-        footer p {
-            font-size: 0.9rem;
-        }
+    footer h3 {
+      margin-bottom: 15px;
+    }
 
-        .copyright {
-            text-align: center;
-            margin-top: 30px;
-            font-size: 0.85rem;
-            opacity: 0.9;
-        }
-    </style>
+    footer p {
+      font-size: 0.9rem;
+    }
+
+    .copyright {
+      text-align: center;
+      margin-top: 35px;
+      font-size: 0.85rem;
+      opacity: 0.9;
+    }
+  </style>
 </head>
 <body>
 
-    <!-- HEADER -->
-    <header>
-        <h1>AINSOFT COMPANY</h1>
-        <p>ANONIMO, INTERAKSYON, NEGOSASYON, SOFTWARE</p>
-    </header>
+<header>
+  <h1>AINSOFT</h1>
+  <p>ANONIMO • INTERAKSYON • NEGOSASYON • SOFTWARE</p>
+  <div style="margin-top:30px;">
+    <a href="#about" style="display:inline-block; padding:14px 32px; background:#fff; color:#1b87a6; border-radius:30px; text-decoration:none; font-weight:600; margin-right:10px;">Learn More</a>
+    <a href="#contact" style="display:inline-block; padding:14px 32px; border:2px solid #fff; color:#fff; border-radius:30px; text-decoration:none; font-weight:600;">Contact Us</a>
+  </div>
+</header>
 
-    <!-- MAIN CONTENT -->
-    <div class="container">
+<nav>
+  <a href="#mission">Mission & Vision</a>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-        <!-- MISSION & VISION -->
-        <div class="card-grid">
-            <div class="card">
-                <h3>Mission</h3>
-                <p>
-                    Ang misyon ng AINSOFT ay magbigay ng isang ligtas at makabagong digital na espasyo kung saan
-                    ang bawat isa ay maaaring malayang magpahayag ng kanilang saloobin, ideya, at opinyon nang hindi
-                    kinakailangang ilantad ang kanilang pagkakakilanlan. Layunin nsmingpalakasin ang bukas na  komunikasyon
-                    sa pamamagitan ng teknolohiya.
-                </p>
-            </div>
+<div class="container">
 
-            <div class="card">
-                <h3>Vision</h3>
-                <p>
-                    Nais ng AINSOFT na maging isang nangungunang platform sa larangas ng anonymous na interaction at
-                    software solutions—isang komunidad na nagtataguyod ng kalayaan sa pagpapahayag, paggalang, at 
-                    makabuluhang diskurso sa digital na mundo.
-                </p>
-            </div>
-        </div>
+  <section id="mission">
+    <div class="card-grid">
+      <div class="card">
+        <h3>Mission</h3>
+        <p>
+          Ang misyon ng AINSOFT ay magbigay ng isang ligtas at makabagong digital na espasyo kung saan
+          ang bawat isa ay maaaring malayang magpahayag ng kanilang saloobin, ideya, at opinyon nang hindi
+          kinakailangang ilantad ang kanilang pagkakakilanlan. Layunin naming palakasin ang bukas na komunikasyon
+          sa pamamagitan ng teknolohiya.
+        </p>
+      </div>
 
-        <!-- ABOUT -->
-        <h2 class="section-title">About Us</h2>
-        <div class="about">
-            <p>
-                Ang AINSOFT ay isang kompanya na nakatuon sa pagbuo ng software na nagbibigay-daan
-                sa mga tao na magsabi ng kanilang saloobin nang anonimo, ligtas, at walang takot sa panghuhusga.
-            Naniniwala kami na maraming ideya, damdamin, at opinyon ang hindi nasasabi dahil sa takot—kaya't 
-            nilikha ang AINSOFT bilang tulay para sa tapat na komunikasyon.
-            </p>
-        </div>
+      <div class="card">
+        <h3>Vision</h3>
+        <p>
+          Nais ng AINSOFT na maging isang nangungunang platform sa larangan ng anonymous interaction at
+          software solutions—isang komunidad na nagtataguyod ng kalayaan sa pagpapahayag, paggalang,
+          at makabuluhang diskurso sa digital na mundo.
+        </p>
+      </div>
+    </div>
+  </section>
 
-        <!-- SERVICES -->
-        <h2 class="section-title">Our Services</h2>
-        <div class="services">
-            <div class="service-box">
-                <p>Ang AINSOFT ay isang ligtas na online space kung saan malaya kang magpahayag ng iyong
-                    mga saloobin at damdamin. Ito ay idinisenyo para sa mga taoong nais lamang maglabas
-                    ng nararamdaman, magbahagi ng mga iniisip, o gumaan ang loob nang walang panghuhusga.
-                </p>
-                <p>    
-                Nag-aalok ito ng anonimo na pagbabahagi at isang kalmado at suportadong kapaligiran na
-                    nakatuon sa pakikinig, pag-unawa, at emosyonal na ginhawa. ipinapaalala nito sa bawat 
-                    user na sila ay pinapakinggan at hindi sila nag-iisa.
-                </p>
-            </div>
+  <section id="about">
+    <h2 class="section-title">About Us</h2>
+    <div class="about">
+      <p>
+        Ang AINSOFT ay isang kompanya na nakatuon sa pagbuo ng software na nagbibigay-daan
+        sa mga tao na magsabi ng kanilang saloobin nang anonimo, ligtas, at walang takot sa panghuhusga.
+        Naniniwala kami na maraming ideya, damdamin, at opinyon ang hindi nasasabi dahil sa takot—kaya't
+        nilikha ang AINSOFT bilang tulay para sa tapat na komunikasyon.
+      </p>
+    </div>
+  </section>
 
+  <!-- STATS -->
+  <section style="margin-bottom:80px;">
+    <div class="card-grid">
+      <div class="card" style="text-align:center;">
+        <h3>Secure</h3>
+        <p>Data privacy and anonymous interaction are our top priorities.</p>
+      </div>
+      <div class="card" style="text-align:center;">
+        <h3>People‑Centered</h3>
+        <p>We build technology that listens, understands, and supports users.</p>
+      </div>
+      <div class="card" style="text-align:center;">
+        <h3>Innovative</h3>
+        <p>Modern solutions designed for meaningful digital communication.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2 class="section-title">Our Services</h2>
+    <div class="services">
+      <div class="service-box">
+        <p>
+          Ang AINSOFT ay isang ligtas na online space kung saan malaya kang magpahayag ng iyong
+          mga saloobin at damdamin. Nag-aalok ito ng anonimo na pagbabahagi at isang kalmado
+          at suportadong kapaligiran na nakatuon sa pakikinig, pag-unawa, at emosyonal na ginhawa.
+        </p>
+        <p>
+          Ipinapaalala nito sa bawat user na sila ay pinapakinggan, nauunawaan, at hindi nag-iisa.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EMPLOYEE MANUAL -->
+  <section id="manual">
+    <h2 class="section-title">Employee Manual & Company Policies</h2>
+
+    <div class="about">
+      <h3>Confidentiality Notice</h3>
+      <p>
+        Ang manwal na ito ay naglalaman ng mahahalagang impormasyon tungkol sa AINSOFT at
+        nakalaan lamang para sa internal na paggamit ng kumpanya. Ang lahat ng empleyado ay
+        inaasahang basahin, unawain, at sundin ang mga patakaran at gabay na nakapaloob dito.
+      </p>
+
+      <p style="margin-top:15px;">
+        <strong>Address:</strong> 1571 Toursdale Dr., Easton, Pennsylvania, United States, 18045<br>
+        <strong>Contact:</strong> ainsoftcompanyph@gmail.com<br>
+        <strong>Effective Date:</strong> December 3, 2025<br>
+        <strong>Version:</strong> 1.0
+      </p>
     </div>
 
-    <!-- FOOTER -->
-    <footer>
-        <div class="footer-content">
-            <div>
-                <h3>Contact Us</h3>
-                <p>Email: ainsoftcompanyph@gmail.com</p>
-                <p>Phone: 63+ 9549977096</p>
-                <p>Address: 1571 Toursdale dr., Easton, Pennsylvania, United States, 18045</p>
-            </div>
+    <div class="about" style="margin-top:40px;">
+      <h3>Message from the CEO</h3>
+      <p>
+        Salamat sa pagpili na maging bahagi ng ating kumpanya. Ang manual na ito ay ginawa
+        upang gabayan ka sa mga patakaran, proseso, at kulturang pinanghahawakan natin araw-araw.
+      </p>
+      <p>
+        Layunin nitong tiyakin na patas, maayos, at ligtas ang ating lugar ng trabaho habang
+        patuloy tayong lumalago bilang isang organisasyon.
+      </p>
+      <p style="margin-top:15px;"><strong>— Rhianna Mae G. Dullete</strong><br>AINSOFT President & CEO</p>
+    </div>
 
-            <div>
-                <h3>Why AINSOFT?</h3>
-                <p>
-                    AINSOFT provides a safe and anonymous space where you can freely express your 
-                    thought and emotions without fear of judgement. Whether you want to vent, share what's on your mind,
-                     or simply release a heavy heart, AINSOFT is here to listen.
-                </p>
-                <p>It's a calm and supportive platform that reminds you—you are heard, understood, and not alone</p>
-            </div>
-        </div>
+    <div class="about" style="margin-top:40px;">
+      <h3>Work Policies & Guidelines</h3>
+      <ul style="padding-left:20px; line-height:1.9;">
+        <li><strong>Working Hours:</strong> 8:00 AM – 8:00 PM, Monday to Friday</li>
+        <li><strong>Attendance:</strong> Employees must report on time and notify supervisors of absences</li>
+        <li><strong>Dress Code:</strong> Strictly formal business attire</li>
+        <li><strong>Professional Conduct:</strong> Respect, professionalism, and non-discrimination</li>
+        <li><strong>Confidentiality:</strong> Company and client information must not be disclosed</li>
+        <li><strong>Company Equipment:</strong> For official use only</li>
+        <li><strong>Leave & Rest Days:</strong> Weekends, holidays, and approved leaves</li>
+        <li><strong>Disciplinary Actions:</strong> Warnings, suspension, or termination depending on severity</li>
+      </ul>
+    </div>
 
-        <div class="copyright">
-            © 2025 AINSOFT COMPANY. All Rights Reserved.
-        </div>
-    </footer>
+    <div class="about" style="margin-top:40px;">
+      <h3>Company Holidays & Wellness Days (2026)</h3>
+      <ul style="padding-left:20px; line-height:1.9;">
+        <li>New Year’s Day – January 1</li>
+        <li>EDSA Anniversary – February 25</li>
+        <li>Araw ng Kagitingan – April 9</li>
+        <li>Labor Day – May 1</li>
+        <li>Independence Day – June 12</li>
+        <li>Productivity Recharge Day – September 15</li>
+        <li>Cybersecurity Day – October 10</li>
+        <li>Wellness Break – October 30</li>
+        <li>Bonifacio Day – November 30</li>
+        <li>Christmas Eve & Day – December 24–25</li>
+        <li>Rizal Day – December 30</li>
+      </ul>
+    </div>
+  </section>
+
+</div>
+
+<footer id="contact">
+  <div class="footer-content">
+    <div>
+      <h3>Contact Us</h3>
+      <p>Email: ainsoftcompanyph@gmail.com</p>
+      <p>Phone: +63 954 997 7096</p>
+      <p>Address: 1571 Toursdale Dr., Easton, Pennsylvania, United States, 18045</p>
+    </div>
+
+    <div>
+      <h3>Why AINSOFT?</h3>
+      <p>
+        AINSOFT provides a safe and anonymous space where you can freely express your
+        thoughts and emotions without fear of judgment. Whether you want to vent,
+        share what's on your mind, or simply release a heavy heart—AINSOFT is here to listen.
+      </p>
+    </div>
+  </div>
+
+  <div class="copyright">
+    © 2026 AINSOFT COMPANY. All Rights Reserved.
+  </div>
+</footer>
 
 </body>
 </html>
-
